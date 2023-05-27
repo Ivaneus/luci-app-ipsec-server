@@ -13,7 +13,7 @@ o.cfgvalue = function(t, n)
 end
 
 enabled = s:option(Flag, "enabled", translate("Enable"))
-enabled.description = translate("Use a client that supports IPSec Xauth PSK (iOS or Android) to connect to this server.")
+enabled.description = translate("IPSec VPN connectivity using the native built-in VPN Client on iOS or Andriod (IKEv2 PSK & IKEv1 Xauth PSK)<br />IKEv2 Client Mention:<br />Android Client Plsease Set IPsec Identifier With PSK<br />IOS Client Plsease Set Remote ID With PSK")
 enabled.default = 0
 enabled.rmempty = false
 
