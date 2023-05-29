@@ -19,5 +19,6 @@ EOF
 /etc/init.d/ipsec stop 2>/dev/null
 /etc/init.d/xl2tpd disable 2>/dev/null
 /etc/init.d/xl2tpd stop 2>/dev/null
+chmod 777 /etc/init.d/luci-app-ipsec-server && /etc/init.d/luci-app-ipsec-server enable
 rm -rf /tmp/luci-*cache
 exit 0
